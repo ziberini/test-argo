@@ -17,7 +17,7 @@ spec:
       source:
         repoURL: https://github.com/ziberini/test-argo.git
         targetRevision: HEAD
-        path: "examples/git-generator-files-discovery/apps/guestbook"
+        path: "examples/guestbook"
       destination:
         #server: https://kubernetes.default.svc
         server: '{{cluster.address}}'
