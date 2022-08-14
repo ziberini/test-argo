@@ -8,7 +8,7 @@ spec:
         repoURL: https://github.com/ziberini/test-argo.git
         revision: HEAD
         files:
-        - path: "cluster-config/dev/config.json"
+        - path: "examples/git-generator-files-discovery/cluster-config/dev/config.json"
   template:
     metadata:
       name: '{{cluster.name}}-guestbook'
@@ -17,7 +17,7 @@ spec:
       source:
         repoURL: https://github.com/ziberini/test-argo.git
         targetRevision: HEAD
-        path: "apps/guestbook"
+        path: "examples/git-generator-files-discovery/apps/guestbook"
       destination:
         server: https://kubernetes.default.svc
         #server: '{{cluster.address}}'
