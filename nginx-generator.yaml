@@ -19,8 +19,8 @@ spec:
         targetRevision: HEAD
         path: "examples/nginx/"
         helm:
-          valueFiles:
-            - "values.yaml"
+          values: |
+            {{values.override}}
           # parameters:
           #   - name: image
           #     value: 'nginx'
