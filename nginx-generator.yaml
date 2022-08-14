@@ -17,7 +17,7 @@ spec:
       source:
         repoURL: https://github.com/ziberini/test-argo.git
         targetRevision: HEAD
-        path: "examples/nginx/templates"
+        path: "examples/nginx/templates/"
         helm:
           valueFiles:
             - "values.yaml"
