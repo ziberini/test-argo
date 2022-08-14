@@ -22,3 +22,7 @@ spec:
         #server: https://kubernetes.default.svc
         server: '{{cluster.address}}'
         namespace: guestbook-2
+      syncPolicy:
+        automated:
+          prune: true
+          selfHeal: true
