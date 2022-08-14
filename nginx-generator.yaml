@@ -21,13 +21,13 @@ spec:
         helm:
           valueFiles:
             - values.yaml
-          parameters:
-            - name: image
-              value: 'nginx'
-            - name: replicaCount
-              value: '1'
-            - name: name
-              value: 'nginx'
+          # parameters:
+          #   - name: image
+          #     value: 'nginx'
+          #   - name: replicaCount
+          #     value: '1'
+          #   - name: name
+          #     value: 'nginx'
       destination:
         # server: https://kubernetes.default.svc
         server: '{{cluster.address}}'
