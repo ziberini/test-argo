@@ -18,7 +18,18 @@ spec:
         repoURL: https://github.com/ziberini/test-argo.git
         targetRevision: HEAD
         path: "examples/nginx"
+        helm:
+          valueFiles:
+            - values.yaml
+          parameters:
+            - name: image
+              value: nginx
+            - name: replicaCount
+              value: 1
+            - name: name
+              value: nginx
       destination:
         # server: https://kubernetes.default.svc
         server: '{{cluster.address}}'
         namespace: dev-nginx
+      
