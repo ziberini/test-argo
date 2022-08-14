@@ -21,7 +21,7 @@ spec:
       destination:
         # server: https://kubernetes.default.svc
         server: '{{cluster.address}}'
-        namespace: guestbook
+        namespace: dev-guestbook
       syncPolicy:
         automated:
           prune: true
