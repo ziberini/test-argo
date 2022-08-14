@@ -2,6 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:
   name: 'nginx'
+  namespace: argocd
 spec:
   generators:
     - git:
@@ -17,10 +18,10 @@ spec:
       source:
         repoURL: https://github.com/ziberini/test-argo.git
         targetRevision: HEAD
-        path: "examples/nginx/"
+        path: "examples/nginx"
         helm:
-          values: |
-            {{values.override}}
+          valueFiles:
+            - values.yaml
           # parameters:
           #   - name: image
           #     value: 'nginx'
