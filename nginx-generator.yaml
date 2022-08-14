@@ -8,7 +8,7 @@ spec:
         repoURL: https://github.com/ziberini/external.git
         revision: HEAD
         files:
-        - path: "dev/config.json"
+        - path: "dev/config.yaml"
   template:
     metadata:
       name: '{{cluster.name}}-nginx'
