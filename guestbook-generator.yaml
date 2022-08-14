@@ -19,8 +19,8 @@ spec:
         targetRevision: HEAD
         path: "examples/guestbook"
       destination:
-        server: https://kubernetes.default.svc
-        # server: '{{cluster.address}}'
+        # server: https://kubernetes.default.svc
+        server: '{{cluster.address}}'
         namespace: guestbook
       syncPolicy:
         automated:
