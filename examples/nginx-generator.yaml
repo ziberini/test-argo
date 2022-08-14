@@ -21,4 +21,4 @@ spec:
       destination:
         #server: https://kubernetes.default.svc
         server: '{{cluster.address}}'
-        namespace: nginx
+        namespace: nginx-2
