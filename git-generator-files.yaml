@@ -5,7 +5,7 @@ metadata:
 spec:
   generators:
     - git:
-        repoURL: https://github.com/ziberini/test-argo.git
+        repoURL: https://github.com/ziberini/external.git
         revision: HEAD
         files:
         - path: "examples/git-generator-files-discovery/cluster-config/dev/config.json"
