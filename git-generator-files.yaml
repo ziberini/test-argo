@@ -22,5 +22,6 @@ spec:
         #server: https://kubernetes.default.svc
         server: '{{cluster.address}}'
         namespace: guestbook
+      helm:
         valueFiles:
         - values.yaml
