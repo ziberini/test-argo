@@ -20,7 +20,7 @@ spec:
         path: "examples/nginx/templates"
         helm:
           valueFiles:
-            - examples/nginx/values.yaml
+            - "values.yaml"
           # parameters:
           #   - name: image
           #     value: 'nginx'
