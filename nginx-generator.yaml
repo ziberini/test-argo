@@ -24,7 +24,7 @@ spec:
             - values.yaml
           parameters:
             - name: "image"
-              value: "{{image}}:{{tag}}"
+              value: '{{containers.image}}:{{containers.tag}}'
           #   - name: replicaCount
           #     value: '1'
           #   - name: name
