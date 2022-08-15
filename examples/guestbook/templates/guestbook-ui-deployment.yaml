@@ -5,7 +5,7 @@ metadata:
   labels:
     environment: {{ .Values.environment }}
 spec:
-  replicas: replicas: {{ .Values.replicaCount }}
+  replicas: {{ .Values.replicaCount }}
   revisionHistoryLimit: 3
   selector:
     matchLabels:
