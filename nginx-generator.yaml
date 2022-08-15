@@ -25,6 +25,8 @@ spec:
           parameters:
             - name: "image"
               value: '{{nginx.image}}:{{nginx.tag}}'
+            - name: "environment"
+              value: '{{guestbook.labels.environment}}'
           #   - name: replicaCount
           #     value: '1'
           #   - name: name
