@@ -27,10 +27,6 @@ spec:
               value: '{{nginx.image}}:{{nginx.tag}}'
             - name: "environment"
               value: '{{guestbook.labels.environment}}'
-          #   - name: replicaCount
-          #     value: '1'
-          #   - name: name
-          #     value: 'nginx'
       destination:
         # server: https://kubernetes.default.svc
         server: '{{cluster.address}}'
