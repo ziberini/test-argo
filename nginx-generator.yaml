@@ -22,9 +22,9 @@ spec:
         helm:
           valueFiles:
             - values.yaml
-          # parameters:
-          #   - name: image
-          #     value: 'nginx'
+          parameters:
+            - name: "image"
+              value: "{{containers.image}}"
           #   - name: replicaCount
           #     value: '1'
           #   - name: name
