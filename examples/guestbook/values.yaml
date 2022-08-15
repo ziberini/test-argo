@@ -1,0 +1,5 @@
+replicaCount: 3
+name: guestbook
+image: <REPLACE_VALUE>
+tag: <REPLACE_VALUE>
+environment: <REPLACE_VALUE>

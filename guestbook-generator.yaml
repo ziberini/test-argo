@@ -18,6 +18,14 @@ spec:
         repoURL: https://github.com/ziberini/test-argo.git
         targetRevision: HEAD
         path: "examples/guestbook"
+        helm:
+          valueFiles:
+            - values.yaml
+          parameters:
+            - name: "image"
+              value: '{{guestbook.image}}:{{guestbook.tag}}'
+            - name: "environment"
+              value: '{{guestbook.labels.environment}}'
       destination:
         # server: https://kubernetes.default.svc
         server: '{{cluster.address}}'
