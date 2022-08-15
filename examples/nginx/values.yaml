@@ -2,3 +2,4 @@ replicaCount: 3
 name: nginx
 image: <REPLACE_VALUE>
 tag: <REPLACE_VALUE>
+environment: <REPLACE_VALUE>
