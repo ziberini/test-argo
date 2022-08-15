@@ -15,7 +15,6 @@ spec:
       labels:
         app: {{ .Values.name }}
     spec:
-    spec:
       containers:
       - image: {{ .Values.image }}
         name: {{ .Values.name }}
