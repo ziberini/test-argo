@@ -1,3 +1,2 @@
 replicaCount: 3
 name: nginx
-image: nginx
