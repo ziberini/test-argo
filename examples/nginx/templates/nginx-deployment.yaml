@@ -2,8 +2,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: {{ .Values.name }}
-  labels:
-    environment: {{ .Values.environment }}
+  # labels:
+  #   environment: {{ .Values.environment }}
 spec:
   replicas: {{ .Values.replicaCount }}
   revisionHistoryLimit: 3
